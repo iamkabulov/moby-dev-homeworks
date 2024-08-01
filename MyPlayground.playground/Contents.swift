@@ -68,3 +68,146 @@ print(balance)
 print(10 + 2 * 5)
 print((10 + 2) * 5)
 print(4 * (9 - (6 / 2)))
+
+//Lab 4
+print(true)
+print(9 == 9)
+print(false)
+print(9 != 9)
+print(false)
+print(47 > 90)
+print(true)
+print(47 < 90)
+print(true)
+print(4 <= 4)
+print(false)
+print(4 >= 5)
+print(false)
+print((47 > 90) && (47 < 90))
+print(true)
+print((47 > 90) || (47 < 90))
+print(false)
+print(!true)
+
+var tenge = 0
+if tenge == 0 {
+	print("Извини, но ты на мели!")
+}
+tenge = 300
+
+if tenge == 0 {
+	print("Извини, но ты на мели!")
+} else {
+	print("Вау, у тебя есть деньги на пирожки!")
+}
+
+tenge = 2000
+if tenge == 0 {
+	print("Извини, но ты на мели!")
+} else if tenge < 400 {
+	print("Вау, у тебя есть деньги на пирожки!")
+} else {
+	print("Едем на Такси!")
+}
+
+let hasFish = true
+let hasPizza = false
+let hasVegan = false
+
+if hasFish && hasPizza && hasVegan {
+	print("Поехали!")
+} else {
+	print("Извините, нам нужно выбрать другое место")
+}
+var isRainy = false
+var temprature = 25
+let isNiceWeather: Bool
+isNiceWeather = !isRainy && temprature < 27
+if isNiceWeather {
+	print("Я иду на прогулку!")
+}
+var season = 1
+switch season {
+case 1:
+	"Зима"
+case 2:
+	"Весна"
+case 3:
+	"Лето"
+case 4:
+	"Осень"
+default:
+	"Error"
+}
+var invitedGuests = ["A", "B", "C"]
+name = "E"
+if invitedGuests.contains(where: { $0 == name }) {
+	print("Добро пожаловать")
+} else {
+	print("Вас нет в списке")
+}
+
+var age = 15
+switch age {
+case 0...2:
+	"Младенец"
+case 3...14:
+	"Детский"
+case 15...:
+	"Взрослый"
+default:
+	"ERROR"
+}
+let dish1 = 2000
+let dish2 = 3000
+var expensiveDish = dish1 > dish2 ? dish1 : dish2
+
+var day = 1
+switch day {
+case 1:
+	"DAY 1 SCHEDULE"
+case 2:
+	"DAY 2 SCHEDULE"
+case 3:
+	"DAY 3 SCHEDULE"
+case 4:
+	"DAY 4 SCHEDULE"
+case 5:
+	"DAY 5 SCHEDULE"
+case 6:
+	"DAY 6 SCHEDULE"
+case 7:
+	"DAY 7 SCHEDULE"
+default:
+	"ERROR"
+}
+var stationCode = "X"
+switch stationCode.lowercased() {
+	case "a":
+		("Станция А", 10)
+	case "b":
+		("Станция B", 15)
+	case "c":
+		("Станция C", 20)
+	case "d":
+		("Станция D", 25)
+	case "e":
+		("Станция E", 30)
+	default:
+		"ERROR"
+	}
+var finger = 2
+switch finger {
+	case 1:
+		"Большой палец"
+	case 2:
+		"Указательный палец"
+	case 3:
+		"Средний палец"
+	case 4:
+		"Безымянный палец"
+	case 5:
+		"Мизинец"
+	default:
+		"Error"
+	}
