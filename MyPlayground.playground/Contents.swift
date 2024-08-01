@@ -210,4 +210,67 @@ switch finger {
 		"Мизинец"
 	default:
 		"Error"
-	}
+}
+
+//lab 5
+var myName = "Hypc"
+print(myName)
+let favoriteQuote = "В чужом саду трава всегда зеленее"
+print("Ваша любимая цитата - \"\(favoriteQuote)\"")
+var emptyString = "A"
+if emptyString.isEmpty {
+	print("Здесь ничего нет")
+} else {
+	print("Она не пуста, как я думал")
+}
+
+let city = "ASTANA"
+let region = "AQMOLA"
+let home = city + ", " + region
+var introduction = "Я живу в "
+print(introduction + home)
+
+var myName2 = "Hypc"
+var myAge = 26
+print("Меня зовут \(myName2), и на следующий год мне будет \(myAge + 1) лет")
+
+let firstName = "Hypc"
+let surName = "K"
+let fullName = firstName + " " + surName
+var previousBest = 100
+var newBest = 200
+let congratulations = "Поздравляем, \(fullName)! Вы превзошли свой предыдущий рекорд в \(previousBest) шагов, сделав \(newBest) шагов вчера!"
+print(congratulations)
+
+let nameInCaps = "НУРС"
+let nameLowerCased = "нурс"
+
+if nameInCaps == nameLowerCased {
+	print("Эти две строки равны")
+} else {
+	print("Эти две строки не равны")
+}
+
+if nameInCaps.lowercased() == nameLowerCased.lowercased() {
+	print("\(nameInCaps) и \(nameLowerCased) совпадают")
+} else {
+	print("\(nameInCaps) и \(nameLowerCased) не совпадают")
+}
+
+let sonName = "Robert Downey Jr."
+
+if sonName.hasSuffix("Jr.") {
+	print("Это имя используется второе поколение")
+}
+
+let textToSearchThrough = "быть или не быть вот в чём вопрос"
+let textToSearchFor = "быть или не быть"
+
+if textToSearchThrough.lowercased().contains(textToSearchFor.lowercased()) {
+	print("Я нашел!")
+}
+
+let name1 = "Нурс"
+
+print("Количество символов в имени: \(name1.count)")
+
